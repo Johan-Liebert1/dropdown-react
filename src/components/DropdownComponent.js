@@ -44,7 +44,9 @@ const DropdownComponent = ({ child }) => {
 	return (
 		<div style={mainDivStyle}>
 			<div style={headerDiv}>
-				<button onClick={handleCollapseChildren}>v</button>
+				<button onClick={handleCollapseChildren}>
+					{collapseChildren ? ">" : "v"}
+				</button>
 				<span>{child.name}</span>
 				<button onClick={handleAddChild}>Add Child</button>
 			</div>
