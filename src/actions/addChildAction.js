@@ -3,7 +3,7 @@ const addChild = (childName, childObject) => {
 
 	let namePrefix = childName === "root" ? "child" : childName;
 
-	const newChild = { name: `${namePrefix}-${number}`, data: "newDataValue" };
+	const newChild = { name: `${namePrefix}-child-${number}`, data: "newDataValue" };
 
 	let newChildren;
 
